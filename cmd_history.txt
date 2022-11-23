@@ -1,0 +1,58 @@
+ 34  mkdir data1 data2 data3
+   35  ls
+   36  touch data1/a.txt data2/b.txt
+   37  touch data1/c.txt data2/d.txt
+   38  ls data1
+   39  ls data2
+   40  chmod 400 data1
+   41  ls -l
+   42  cd data1
+   43  ls data1
+   44  chmod 100 data1
+   45  ls -l
+   46  cd data1
+   47  ls
+   48  cd ..
+   49  cat /etc/passwd
+   50  useradd --help
+   51  cat /etc/passwd
+   52  useradd test1
+   53  sudo useradd test1
+   54  cat /etc/passwd
+   55  su - test1
+   56  passwd test1
+   57  sudo passwd test1
+   58  su - test1
+   59  sudo useradd -s /bin/bash -c "New User" test2
+   60  cat /etc/passwd
+   61  sudo passwd test2
+   62  su - test2
+   63  sudo su
+   64  su - test2
+   65  sudo usermod -aG sudo test2
+   66  su - test2
+   67  sudo usermod -aG lp,avahi,audio test2
+   68  sudo usermod -c "New command" test2
+   69  cat /etc/passwd
+   70  sudo adduser test4
+   71  ls /home
+   72  su - test4
+   73  sudo userdel test1
+   74  sudo userdel test2
+   75  sudo userdel test3
+   76  sudo userdel test4
+   77  sudo rm -rf /home/test4
+   78  cat /etc/group
+   79  sudo useradd -G sudo,lp,audio tets1
+   80  cat /etc/passwd
+   81  cat /etc/group
+   82  sudo userdel tets2
+   83  sudo userdel tets1
+   84  sudo useradd test3
+   85  sudo passwd test3
+   86  sudo usermod -aG sid test3
+   87  cat /etc/groups
+   88  cat /etc/group
+   89  ls -l
+   90  history 
+
